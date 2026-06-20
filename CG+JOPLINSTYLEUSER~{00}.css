@@ -12,7 +12,7 @@ p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {
 }
 h1 {
 	font-variant: small-caps;
-	border-bottom: 0.0625rem solid;
+	border-bottom: solid;
 }
 h2 {
 	font-variant: small-caps;
@@ -40,63 +40,39 @@ table th {
 	text-align: justify;
 }
 .mermaid {text-align: center;}
-.exported-note {font-size: 0.75rem;}
 .exported-note-title {display: none;}
+@media print {html {zoom: 100%;}}
 @page {
-    margin: 3rem;
-    padding: 0.5rem;
+    margin: 4.00rem;
+    padding: 1.00rem;
     @bottom-center {
-        margin: 0;
-        padding: 0.125rem;
-        font-size: 0.75rem;
         font-weight: bold;
-        border-top: 0.125rem solid;
+        border-top: solid;
         content: "© 2026 Ytsief Ventures";
-        margin-bottom: 1rem;
     }
     @bottom-left {
-        margin: 0;
-        padding: 0.125rem;
-        font-size: 0.75rem;
         font-weight: bold;
-        border-top: 0.125rem solid;
+        border-top: solid;
         content: "Confidential";
-        margin-bottom: 1rem;
     }
     @bottom-right {
-        margin: 0;
-        padding: 0.125rem;
-        font-size: 0.75rem;
         font-weight: bold;
-        border-top: 0.125rem solid;
+        border-top: solid;
         content: "Page " counter(page) " of " counter(pages);
-        margin-bottom: 1rem;
     }
     @top-center {
-        margin: 0;
-        padding: 0.125rem;
-        font-size: 0.75rem;
         font-weight: bold;
-        border-bottom: 0.125rem solid;
+        border-bottom: solid;
         content: "";
-        margin-top: 1rem;
     }
     @top-left {
-        margin: 0;
-        padding: 0.125rem;
-        font-size: 0.75rem;
         font-weight: bold;
-        border-bottom: 0.125rem solid;
+        border-bottom: solid;
         content: "Note Title";
-        margin-top: 1rem;
     }
     @top-right {
-        margin: 0;
-        padding: 0.125rem;
-        font-size: 0.75rem;
         font-weight: bold;
-        border-bottom: 0.125rem solid;
+        border-bottom: solid;
         content: "Note Date";
-        margin-top: 1rem;
     }
 }
