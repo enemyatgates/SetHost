@@ -68,11 +68,11 @@ table th {
     @top-left {
         font-weight: bold;
         border-bottom: solid;
-        content: "Note Title";
+        content: "";
     }
     @top-right {
         font-weight: bold;
         border-bottom: solid;
-        content: "Note Date";
+        content: "";
     }
 }
