@@ -1,78 +1,19 @@
 /*
 ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-Joplin Custom Stylesheet for Ytsief Ventures [2026] by Claude
+Joplin Custom Stylesheet
 ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 */
 *, blockquote, code, pre, table th, table td, table tr {
 	font-family: 'Bookman Old Style', 'Book Antiqua', Georgia, serif;
-	line-height: 1.6;
 }
 p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {
 	text-align: justify;
 }
 h1 {
 	font-variant: small-caps;
-	border-bottom: solid;
 }
 h2 {
 	font-variant: small-caps;
 }
-pre {
-	overflow-x: auto;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-}
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-table {
-	width: auto;
-	table-layout: fixed;
-	border-collapse: collapse;
-}
-table th, table td {
-	word-wrap: break-word;
-}
-table th {
-	font-weight: bold;
-	text-align: justify;
-}
 .mermaid {text-align: center;}
 .exported-note-title {display: none;}
-@media print {html {zoom: 100%;}}
-@page {
-    margin: 4.00rem;
-    padding: 1.00rem;
-    @bottom-center {
-        font-weight: bold;
-        border-top: solid;
-        content: "© 2026 Ytsief Ventures";
-    }
-    @bottom-left {
-        font-weight: bold;
-        border-top: solid;
-        content: "Confidential";
-    }
-    @bottom-right {
-        font-weight: bold;
-        border-top: solid;
-        content: "Page " counter(page) " of " counter(pages);
-    }
-    @top-center {
-        font-weight: bold;
-        border-bottom: solid;
-        content: "";
-    }
-    @top-left {
-        font-weight: bold;
-        border-bottom: solid;
-        content: "";
-    }
-    @top-right {
-        font-weight: bold;
-        border-bottom: solid;
-        content: "";
-    }
-}
