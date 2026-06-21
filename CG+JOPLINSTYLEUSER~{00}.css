@@ -6,14 +6,53 @@ Joplin Custom Stylesheet
 *, blockquote, code, pre, table th, table td, table tr {
 	font-family: 'Bookman Old Style', 'Book Antiqua', Georgia, serif;
 }
-p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {
+p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img, blockquote {
 	text-align: justify;
+}
+hr {
+	border-bottom: solid;
 }
 h1 {
 	font-variant: small-caps;
+	border-bottom: solid;
 }
 h2 {
 	font-variant: small-caps;
 }
 .mermaid {text-align: center;}
 .exported-note-title {display: none;}
+@media print {html {zoom: 100%;}}
+@page {
+	margin-top: 3.20rem;
+	margin-bottom: 3.20rem;
+    @bottom-center {
+        font-weight: bold;
+        border-top: solid;
+        content: "";
+    }
+    @bottom-left {
+        font-weight: bold;
+        border-top: solid;
+        content: "";
+    }
+    @bottom-right {
+        font-weight: bold;
+        border-top: solid;
+        content: "Page " counter(page) " of " counter(pages);
+    }
+    @top-center {
+        font-weight: bold;
+        border-bottom: solid;
+        content: "";
+    }
+    @top-left {
+        font-weight: bold;
+        border-bottom: solid;
+        content: "";
+    }
+    @top-right {
+        font-weight: bold;
+        border-bottom: solid;
+        content: "";
+    }
+}
